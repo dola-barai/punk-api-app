@@ -34,7 +34,7 @@ function App() {
       <div className="beer-container">
         {filteredBeers.map(beer => (
           <div key={beer.id} className="beer-card">
-            <img className='img' src={beer.image_url} alt={beer.name} />
+            <img src={beer.image_url} alt={beer.name} />
             <h2>{beer.name}</h2>
             <p>{beer.tagline}</p>
           </div>
